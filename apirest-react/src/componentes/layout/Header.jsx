@@ -4,8 +4,7 @@ const Header = () => {
   return (
     <header className="barra">
         <div className="contenedor">
-            <h1>CRM - Admin de Clientes</h1>
-            <h2>hola</h2>
+            <h1>CRM - Administrador de Clientes</h1>
         </div>
     </header>
   );

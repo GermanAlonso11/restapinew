@@ -3,23 +3,30 @@ import './App.css'
 import Header from './componentes/layout/Header.jsx';
 import Navegacion from './componentes/layout/Navegacion.jsx';
 import { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
+    <Router>
     <Fragment>
       <Header />
 
-      <div class="grid contenedor contenido-principal"/>
-      <Navegacion />
+      <div class="grid contenedor contenido-principal">
+        <Navegacion />
 
-      <main className="caja-contenido col-9">
-        
-      </main>
+        <main class="caja-contenido col-9">
+          <Switch>
+            <Route exact path="/" component={() => <h1>Clientes</h1>} />
+            <Route exact path="/productos" component={() => <h1>Productos</h1>} />
+            <Route exact path="/pedidos" component={() => <h1>Pedidos</h1>} />
+          </Switch>
+        </main>
+      </div>
 
     </Fragment>
-    
+    </Router>
   )
 }
 
