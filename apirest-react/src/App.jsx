@@ -5,6 +5,11 @@ import Navegacion from './componentes/layout/Navegacion.jsx';
 import { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+/*Componentes */
+import Clientes from './componentes/layout/Clientes.jsx';
+import Productos from './componentes/layout/Productos.jsx';
+import Pedidos from './componentes/layout/Pedidos.jsx';
+
 function App() {
   // const [count, setCount] = useState(0)
 
